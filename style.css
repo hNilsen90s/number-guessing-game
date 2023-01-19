@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    font-family: Inter;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 25px;
+}
+
+#answerField {
+    margin-top: 30px;
+    background-color: #F1931B;
+    width: 465px;
+    padding: 25px;
+    border-radius: 3px;
+    display: none;
+}
+
+.display {
+    display: flex !important;
+}
+
+#answerField div {
+    text-align: center;
+    width: 100%;
+}
+
+#guessNumber {
+    width: 500px;
+    padding: 5px;
+}
+
+#submit {
+    width: 500px;
+    padding: 5px;
+    box-sizing: content-box;
+    margin-top: 10px;
+}
+
+.hint {
+    font-size: 13px;
+    font-style: italic;
+}

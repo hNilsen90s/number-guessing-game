@@ -1,0 +1,38 @@
+.map i javascript kan loope gjennom en array, og enkelt logge/printe hva en array inneholder.
+Eksempel på en array ved bruk av map kan være,
+
+const array = [1,2,3,4,5,6]
+array.map(array => console.log(array))
+
+Du kan også utvide en arrow function til å være:
+
+array.map(array => {
+    console.log(array)
+    console.log("Nytt nummer")
+})
+
+.filter i javascript brukes til å filtere en array, eller et objekt ved å fjerne ulike elementer i en array eller objekt.
+
+const varer = [
+    { navn: "Syltetøy", pris: 100 },
+    { navn: "Smør", pris: 40 },
+    { navn: "Pepperkaker", pris: 19 },
+    { navn: "Sjokolade", pris: 150 },
+]
+
+console.log(varer.filter(varer => varer.pris <= 10))
+
+Denne viser alle varer med pris under, eller er lik 10. 
+
+.reduce er også en nyttig funksjon i javascript som mottar et array, og summerer inneholdet i arrayen. Foreksempel ved å plusse alle tall
+i ett array.
+
+const tall = [1,2,3,4]
+
+console.log(tall.reduce((a,b) => a + b))
+
+// Du kan også skrive funksjonen slik:
+
+console.log(tall.reduce(function(a,b) {
+	return a+b
+}))
